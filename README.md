@@ -1,0 +1,2 @@
+# LSTM_Flask
+LSTMによる時系列予測を行う簡易WebアプリをFlaskで実装
