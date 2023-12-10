@@ -1,0 +1,5 @@
+Flask
+uwsgi
+numpy
+tensorflow
+matplotlib

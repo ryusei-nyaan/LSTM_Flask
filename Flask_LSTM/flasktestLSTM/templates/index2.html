@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="JP">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSTMによる予測</title>
+</head>
+<body>
+
+    <form action="/" method="POST" enctype="multipart/form-data" >
+        <h1>LSTMによる予測</h1>
+        
+    
+        <br></br>
+        <p>使用する過去の時間</p>
+
+        <input type="number" name="tau" min="1">
+    
+        <br></br>
+        <p>予測したい点数</p>
+
+        <input type="number" name="predict" min="1">
+    
+        <br></br>
+        <br></br>
+        <p>時系列データ（csv形式）</p>
+    
+        <input type="file" name="csv_file" accept=".csv"></input>
+
+        <br></br>
+        <br></br>
+        <input type="submit" value="学習開始"></input>
+
+    </form>
+</body>
+
+    
+</html>

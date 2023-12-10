@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile_nginx
+    networks:
+      your_network:
+        ipv4_address: 172.18.0.2
+    ports:
+      - "5000:80"
+    depends_on:
+      - flask_wsgi_server
+    tty: true
+    stdin_open: true
+
+  flask_wsgi_server:
+    networks:
+      your_network:
+        ipv4_address: 172.18.0.3
+    tty: true
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+networks:
+  your_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.18.0.0/16

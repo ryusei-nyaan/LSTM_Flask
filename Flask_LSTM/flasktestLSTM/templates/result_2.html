@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result</title>
+</head>
+<body>
+    <h1>予測結果</h1>
+    <img src="{{ url_for('static', filename='plot.png') }}" alt="Matplotlib Plot">
+
+    <br></br>
+    <h2>学習用データ時系列</h2>
+    <img src="{{ url_for('static', filename='learningdata.png') }}" alt="Matplotlib Plot">
+</body>
+</html>
