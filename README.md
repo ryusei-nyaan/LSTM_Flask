@@ -7,6 +7,9 @@ LSTMによる時系列予測を行う簡易WebアプリをFlaskで実装
 ２．dockerを起動してpowershell (macだとターミナル)でディレクトリをFlask_LSTM直下に移動します
 
 ３．docker compose upを打ち込みます（必要に応じてデタッチモードでお願いします）
+```shell
+docker compose up
+```
 
 ４．結構待つ
 
